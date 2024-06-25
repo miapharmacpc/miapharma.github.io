@@ -117,7 +117,7 @@ h5, .h5 {
     line-height: 1.5rem;
 }
 h6, .h6 {
-    font-size: 1rem;
+    font-size: 15px;;
     font-weight: 700;
     line-height: 1.5rem;
 }
@@ -164,7 +164,7 @@ p:last-child {
 .circle {
     width: 8vmax;
     height: 8vmax;
-    border-right: 4px solid #000;
+    border-right: 4px solid #036845;
     border-radius: 50%;
     -webkit-animation: spinRight 800ms linear infinite;
     animation: spinRight 800ms linear infinite;
@@ -199,7 +199,7 @@ p:last-child {
     top: calc(50% - 2vmax);
     left: calc(50% - 2vmax);
     border: 0;
-    border-right: 2px solid #000;
+    border-right: 2px solid #036845;
     -webkit-animation: none;
     animation: none;
 }
@@ -284,8 +284,8 @@ p:last-child {
     }
 }
 .mb-150 {
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 50px;
+    margin-bottom: 10px;
 }
 @media only screen and (max-width: 767.96px) {
     .mb-150 {
@@ -603,7 +603,7 @@ ul.sub-menu li:last-child {
 }
 .mean-bar a.meanmenu-reveal {
     background-color: #036845;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 .main-menu-wrap {
     position: relative;
@@ -616,10 +616,14 @@ ul.sub-menu li:last-child {
 }
 .mean-container .mean-nav ul li a {
     padding: 0.5em 5%;
+    background-color: #036845;
+    color: #fff;
+    font-weight: bold;
+	text-transform: none;
+}
+.mean-container .mean-nav ul li a:hover {
     background-color: #f3cb51;
     color: #036845;
-    font-weight: bold;
-    border-radius: 15px;
 }
 .mean-container .mean-nav ul li li a {
     padding: 0.5em 10%;
@@ -629,6 +633,12 @@ ul.sub-menu li:last-child {
     height: 10px;
     line-height: 10px;
     width: 15px;
+	background-color: #036845;
+    color: #fff;
+}
+.mean-container .mean-nav ul li a.mean-expand:hover {
+    background-color: #f3cb51;
+    color: #036845;
 }
 .mean-container a.meanmenu-reveal {
     padding: 8px 8px 6px;
@@ -685,10 +695,6 @@ nav.main-menu li a {
 .sticky-wrapper.is-sticky .top-header-area {
     background-color: #fff;
     padding: 15px 0;
-    /*
-    border-bottom: 2px solid #036845;
-    border-top: 2px solid #036845;
-*/
 }
 .top-header-area {
     -webkit-transition: 0.3s;
@@ -703,7 +709,7 @@ ul.navbar-nav {
     left: 0;
     top: 0;
     z-index: 5555;
-    background-color: #f3cb51;
+    background-color: #f6eab4;
     width: 100%;
     height: 100%;
     text-align: center;
@@ -747,7 +753,7 @@ a.mobile-show {
     font-size: 50px;
     font-weight: 700;
     margin-bottom: 40px;
-    color: #fff;
+    color: #036845;
 }
 .search-bar-tablecell button[type=submit] {
     border: none;
@@ -759,6 +765,7 @@ a.mobile-show {
     border-radius: 50px;
     font-weight: 700;
 }
+
 .search-bar-tablecell input::-webkit-input-placeholder {
     color: #fff;
 }
@@ -787,7 +794,7 @@ a.mobile-show {
     z-index: 999;
 }
 .search-bar-tablecell h3 {
-    color: #fff;
+    color: #036845;
     margin-bottom: 30px;
     font-weight: 600;
     text-transform: uppercase;
@@ -912,7 +919,7 @@ h2.widget-title:after {
     left: 0;
     top: 0;
     content: "\f105";
-    font-family: "Noto Sans";
+    font-family: "Font Awesome 5 Free";
     font-weight: 900;
     color: #f3cb51;
 }
@@ -943,11 +950,12 @@ a.bordered-btn {
     -o-transition: 0.3s;
     transition: 0.3s;
     color: #036845;
+	border: 3px solid #036845;
 }
 a.bordered-btn:hover {
     background-color: #f3cb51;
     color: #036845;
-    border: 2px solid #f3cb51;
+	border: 3px solid #f3cb51;
 }
 ul.sub-menu a {
     -webkit-transition: 0.3s;
@@ -1081,6 +1089,9 @@ div.owl-controls, .owl-controls div {
 div.owl-controls div.owl-nav div:hover {
     opacity: 0.7;
 }
+.pagination-wrap {
+	margin-top: 0px;
+}
 .pagination-wrap ul li a {
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
@@ -1200,8 +1211,8 @@ ul.product-share li:hover a {
     transition: 0.3s;
 }
 .search-bar-tablecell button[type=submit]:hover {
-    background-color: #fff;
-    color: #000;
+    background-color: #f3cb51;
+    color: #036845;
 }
 span.close-btn {
     -webkit-transition: 0.3s;
@@ -1315,10 +1326,10 @@ input[type="submit"] {
     border-radius: 3px;
 }
 .homepage-bg-1 {
-    background-image: url("../img/hero-bg-1.png");
+    background-image: url("../img/hero-bg-2.png");
 }
 .homepage-bg-2 {
-    background-image: url(../img/hero-bg-2.png);
+    background-image: url(../img/hero-bg-1.png);
 }
 .homepage-bg-3 {
     background-image: url(../img/hero-bg-3.png);
@@ -1412,12 +1423,15 @@ div.owl-controls, .owl-controls div {
     border-radius: 999px;
 }
 /*** Facts ***/
+.container-xxl {
+	margin-top: 20px;
+}
 .fact-item {
     transition: .5s;
 }
 .fact-item:hover {
     margin-top: -10px;
-    background: #FFFFFF !important;
+    background: #f6eab4 !important;
     box-shadow: 0 0 45px rgba(0, 0, 0, .07);
 }
 /*========= news_categorie_area css ===========*/
@@ -1506,12 +1520,21 @@ div.owl-controls, .owl-controls div {
     font-weight: 600;
 }
 .single-latest-news h3 a {
-    color: #051922;
+    color: #036845;
+}
+p.news-meta span {
+    margin-right: 15px;
+    opacity: 0.6;
+    color: #036845;
+    font-size: 0.85em;
+}
+p.news-meta span:last-child {
+    margin-right: 0;
 }
 p.blog-meta span {
     margin-right: 15px;
     opacity: 0.6;
-    color: #051922;
+    color: #036845;
     font-size: 0.85em;
 }
 p.blog-meta span:last-child {
@@ -1525,7 +1548,7 @@ p.excerpt {
     color: #555;
 }
 .latest-news a.boxed-btn {
-    margin-top: 80px;
+    margin-top: 30px;
 }
 .news-text-box {
     padding: 25px;
@@ -1642,6 +1665,9 @@ span.comment-date {
     line-height: 2;
     margin: 0;
 }
+.comment-template {
+	margin-bottom: 100px;
+}
 .comment-template h4 {
     margin-bottom: 10px;
 }
@@ -1713,7 +1739,8 @@ span.comment-date {
     left: 0;
     top: 2px;
     content: "\f105";
-    font-family: "Noto Sans";
+	color: #f3cb51;
+    font-family: "Font Awesome 5 Free";
     font-weight: 900;
 }
 .sidebar-section .popular_post_widget .post_item .media-body {
@@ -1737,7 +1764,7 @@ span.comment-date {
     color: #f3cb51;
 }
 .sidebar-section .popular_post_widget .post_item .media-body p {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 21px;
     margin-bottom: 0px;
 }
@@ -1813,17 +1840,18 @@ span.comment-date {
     box-shadow: none;
 }
 .sidebar-section .newsletter_widget .bbtns {
-    background: #ffba00;
+    background: #f3cb51;
     color: #fff;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 38px;
     display: inline-block;
-    font-weight: 500;
-    padding: 0px 24px 0px 24px;
+    font-weight: bold;
+	text-align: center;
+    padding: 5px;
     border-radius: 0;
 }
 .sidebar-section .newsletter_widget .text-bottom {
-    font-size: 12px;
+    font-size: 14px;
 }
 .tag-section ul li {
     display: inline-block;
@@ -2024,6 +2052,7 @@ a.video-play-btn {
 .abt-text p.top-sub {
     opacity: 0.8;
     margin-bottom: 10px;
+	text-align: justify;
 }
 .abt-text p:last-child {
     margin-bottom: 0;
@@ -2175,11 +2204,11 @@ a.video-play-btn {
 .contact-form form p input[type=text], .contact-form form p input[type=tel], .contact-form form p input[type=email] {
     width: 49%;
     padding: 15px;
-    border: 1px solid #036845;
+    border: 1px solid #eee;
     border-radius: 3px;
 }
 .contact-form form p textarea {
-    border: 1px solid #036845;
+    border: 1px solid #eee;
     padding: 15px;
     height: 200px;
     border-radius: 3px;
@@ -2267,8 +2296,14 @@ a.video-play-btn {
 # Shop Page Styles
 
 ----------------------------------------------------------------------------- */
+.product-section2 {
+	background-image:url("../img/products/bg-shop.png");
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
 .product-filters {
-    margin-bottom: 80px;
+	margin-top: 50px;
+    margin-bottom: 50px;
 }
 .product-filters ul {
     margin: 0;
@@ -2278,13 +2313,13 @@ a.video-play-btn {
 }
 .product-filters ul li {
     display: inline-block;
-    font-weight: 700;
-    font-size: 18px;
-    margin: 15px;
+    font-weight: 600;
+    font-size: 15px;
+    margin: 3px;
     border: 1px solid #036845;
     color: #036845;
     cursor: pointer;
-    padding: 8px 20px;
+    padding: 8px 14px;
     border-radius: 25px;
 }
 .product-filters ul li.active {
@@ -2292,6 +2327,45 @@ a.video-play-btn {
     background-color: #036845;
     color: #fff;
 }
+.sale {
+	text-align: center;
+}
+.sale img {
+	width: 50%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-radius: 15px;
+}
+
+/*TuyenDung*/
+
+.product-td-filters {
+	margin-top: 50px;
+    margin-bottom: 50px;
+}
+.product-td-filters ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+.product-td-filters ul li {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 15px;
+    margin: 3px;
+    border: 1px solid #036845;
+    color: #036845;
+    cursor: pointer;
+    padding: 8px 14px;
+    border-radius: 25px;
+}
+.product-td-filters ul li.active {
+    border: 1px solid #036845;
+    background-color: #036845;
+    color: #fff;
+}
+/*End-TuyenDung*/
 .single-product-item {
     margin-bottom: 30px;
 }
@@ -2693,21 +2767,23 @@ table.order-details tbody td {
     letter-spacing: 3px; /* Khoảng cách giữa các ký tự */
     margin-bottom: 20px; /* Khoảng cách dưới tiêu đề */
 }
-.forum2 h2  {
+.forum h2  {
     font-size: 28px; /* Kích thước tiêu đề */
     font-weight: 700; /* Độ đậm của chữ */
     color: #036845; /* Màu chữ */
     margin: 20px; /* Khoảng cách dưới tiêu đề */
 	text-align: center; /* Căn giữa nội dung phần diễn đàn */
 }
-.forum2 h3  {
+.forum h3  {
     font-size: 24px; /* Kích thước tiêu đề */
     font-weight: 700; /* Độ đậm của chữ */
     color: #f3cb51; /* Màu chữ */
     margin: 20px; /* Khoảng cách dưới tiêu đề */
 	text-align: center; /* Căn giữa nội dung phần diễn đàn */
 }
-.subject img  {
+
+.forum img  {
+	width: 100%;
     margin: 20px;
 	border-radius: 15px;
 }
@@ -2718,19 +2794,19 @@ table.order-details tbody td {
 */
 .careers {
     display: flex;
+	 width: 100%;
+    height: 600px;
     flex-direction: column;
     align-items: center;
     margin-top: 30px; /* Khoảng cách với menu 30px */
 }
 
-.poster {
-    margin-bottom: 10px; /* Khoảng cách 10px giữa poster và form */
+.anhtuyendung img {
+	width: 600px;
+    height: 400px;
+	margin-bottom: 10px; /* Khoảng cách 10px giữa poster và form */
     text-align: center; /* Căn giữa các phần tử bên trong */
-}
-
-.poster img {
-    max-width: 100%;
-    height: auto;
+	border-radius: 15px;
 }
 
 .form {
@@ -2781,7 +2857,27 @@ table.order-details tbody td {
     background-color: #f3cb51;
 	color: #036845;
 }
-
+.form2 {
+	text-align: center;
+	border: none;
+}
+.form2 .btn-dangky {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #036845;
+    color: #fff;
+    text-decoration: none;
+	border: none;
+	font-weight: bold;
+    border-radius: 30px;
+	margin-top: 30px;
+	text-align: center;
+    transition: background-color 0.3s ease;
+}
+.form2 .btn-dangky:hover {
+    background-color: #f3cb51;
+	color: #036845;
+}
 .poster img {
     max-width: 100%;
     height: auto;
@@ -2789,11 +2885,15 @@ table.order-details tbody td {
 
 .form-container {
     max-width: 400px;
-    margin: 0 auto;
+    margin: 150px auto;
     padding: 20px;
     border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f9f9f9;
+    border-radius: 15px;
+    background-color: #f3cb51;
+}
+.form-container h3 {
+	text-align: center;
+	font-size: 20px;
 }
 .form-group {
     margin-bottom: 15px;
@@ -2803,26 +2903,42 @@ table.order-details tbody td {
     display: block;
     margin-bottom: 5px;
 }
-.form-group input[type="text"], .form-group input[type="tel"], .form-group select {
+.form-group input[type="text"], .form-group input[type="tel"], .form-group input[type="email"], .form-group select {
     width: 100%;
-    padding: 8px;
+    padding: 24px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
     font-size: 14px;
 }
-.form-group .btn-submit {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 15px;
+.btn-submit{
+    background-color:  #036845;
+    color: #fff;
+    padding: 10px 10px;
+	width: 100px;
     border: none;
-    border-radius: 4px;
+    border-radius: 30px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 14px;
+	font-weight: bold;
 }
-.form-group .btn-submit:hover {
-    background-color: #45a049;
+.btn-cancel {
+    background-color:  #036845;
+    color: #fff;
+    padding: 10px 10px;
+	width: 100px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 14px;
+	font-weight: bold;
 }
+.form-group .btn-submit:hover,.form-group .btn-cancel:hover {
+    background-color: #f3cb51;
+	color: #036845;
+	border: none;
+}
+
 .message-container {
     margin-top: 20px;
     padding: 10px;

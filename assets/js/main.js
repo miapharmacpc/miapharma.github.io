@@ -24,11 +24,11 @@
                 }
             }
         });
-//        // Facts counter
-//        $('[data-toggle="counter-up"]').counterUp({
-//            delay: 10,
-//            time: 2000
-//        });
+        //        // Facts counter
+        //        $('[data-toggle="counter-up"]').counterUp({
+        //            delay: 10,
+        //            time: 2000
+        //        });
 
         // homepage slider
         $(".homepage-slider").owlCarousel({
@@ -109,6 +109,33 @@
         // isotop inner
         $(".product-lists").isotope();
 
+        // projects td filters isotop
+        $(".product-td-filters li").on('click', function () {
+
+            $(".product-td-filters li").removeClass("active");
+            $(this).addClass("active");
+
+            var selector = $(this).attr('data-filter');
+
+            $(".product-td-lists").isotope({
+                filter: selector,
+            });
+
+        });
+        // Apply the default filter on page load
+        $(document).ready(function () {
+            var defaultFilter = ".td1"; // Change this to your default category filter
+            $(".product-td-lists").isotope({
+                filter: defaultFilter,
+            });
+
+            // Optionally, add the 'active' class to the default filter button
+            $(".product-td-filters li[data-filter='" + defaultFilter + "']").addClass("active");
+        });
+
+        // isotop inner
+        $(".product-td-lists").isotope();
+
         // magnific popup
         $('.popup-youtube').magnificPopup({
             disableOn: 700,
@@ -158,40 +185,33 @@
             });
         });
 
-		
-//		 // Hàm xử lý khi submit form đăng ký đại lý Miapharma
-//        function submitForm() {
-//            var fullname = $('#fullname').val();
-//            var phone = $('#phone').val();
-//            var province = $('#province').val();
-//
-//            // Kiểm tra điều kiện nhập liệu
-//            if (fullname && phone && province) {
-//                // Hiển thị thông báo
-//                alert('Đăng ký của bạn đã được ghi nhận. Vui lòng chờ phê duyệt từ Miapharma.');
-//                // Reset form
-//                $('#fullname').val('');
-//                $('#phone').val('');
-//                $('#province').val('');
-//            } else {
-//                alert('Vui lòng điền đầy đủ thông tin.');
-//            }
-//        }
-//
-//        // Gắn sự kiện submit của form
-//        $('#register-form').on('submit', function (event) {
-//            event.preventDefault(); // Ngăn chặn form submit mặc định
-//            submitForm(); // Gọi hàm xử lý submit
-//        });
 
-		
-		
-		
-		
-		
-		
-		
-		
+        //		 // Hàm xử lý khi submit form đăng ký đại lý Miapharma
+        //        function submitForm() {
+        //            var fullname = $('#fullname').val();
+        //            var phone = $('#phone').val();
+        //            var province = $('#province').val();
+        //
+        //            // Kiểm tra điều kiện nhập liệu
+        //            if (fullname && phone && province) {
+        //                // Hiển thị thông báo
+        //                alert('Đăng ký của bạn đã được ghi nhận. Vui lòng chờ phê duyệt từ Miapharma.');
+        //                // Reset form
+        //                $('#fullname').val('');
+        //                $('#phone').val('');
+        //                $('#province').val('');
+        //            } else {
+        //                alert('Vui lòng điền đầy đủ thông tin.');
+        //            }
+        //        }
+        //
+        //        // Gắn sự kiện submit của form
+        //        $('#register-form').on('submit', function (event) {
+        //            event.preventDefault(); // Ngăn chặn form submit mặc định
+        //            submitForm(); // Gọi hàm xử lý submit
+        //        });
+
+
         // stikcy js
         $("#sticker").sticky({
             topSpacing: 0

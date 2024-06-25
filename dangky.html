@@ -7,7 +7,7 @@
 <meta name="description" content="Responsive Bootstrap4 Shop Template, Created by Imran Hossain from https://imransdesign.com/">
 
 <!-- title -->
-<title>ĐĂNG KÝ LÀM ĐẠI LÝ MIAPHARMA</title>
+<title>Đăng ký đại lý</title>
 
 <!-- favicon -->
 <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png">
@@ -63,16 +63,15 @@
                   <li><a href="checkout.html">Kiểm tra thanh toán</a></li>
                 </ul>
               </li>
-              <li><a href="news.html">Chuyên mục Blog</a>
-              </li>
+              <li><a href="news.html">Chuyên mục Blog</a> </li>
               <li><a href="tuyendung.html">Tuyển dụng</a> </li>
               <li><a href="contact.html">Liên hệ</a></li>
               <li>
-                <div class="header-icons"> <a class="shopping-cart" href="cart.html"><i class="fas fa-shopping-cart"></i></a> <a class="mobile-hide search-bar-icon" href="index.html"><i class="fas fa-search"></i></a> </div>
+                <div class="header-icons"> <a class="shopping-cart" href="cart.html"><i class="fas fa-shopping-cart"></i></a> <a class="mobile-hide search-bar-icon" href="#"><i class="fas fa-search"></i></a> </div>
               </li>
             </ul>
           </nav>
-          <a class="mobile-show search-bar-icon" href="index.html"><i class="fas fa-search"></i></a>
+          <a class="mobile-show search-bar-icon" href="#"><i class="fas fa-search"></i></a>
           <div class="mobile-menu"></div>
           <!-- menu end --> 
         </div>
@@ -100,7 +99,7 @@
 </div>
 <!-- end search area --> 
 
-<!-- breadcrumb-section -->
+<!-- breadcrumb-section --> 
 <!--
 <div class="breadcrumb-section breadcrumb-bg">
   <div class="container">
@@ -114,59 +113,62 @@
     </div>
   </div>
 </div>
--->
+--> 
 <!-- end breadcrumb section --> 
 <!--form đăng ký đại lý-->
-	<div class="form-container">
-        <h3>Đăng ký làm đại lý MIAPHARMA</h3>
-        <div class="form-group">
-            <label for="fullname">Họ và tên:</label>
-            <input type="text" id="fullname" name="fullname" required>
-        </div>
-        <div class="form-group">
-            <label for="phone">Số điện thoại:</label>
-            <input type="tel" id="phone" name="phone" required>
-        </div>
-        <div class="form-group">
-            <label for="province">Khu vực tỉnh thành:</label>
-            <select id="province" name="province" required>
-                <option value="">Chọn tỉnh thành</option>
-                <option value="Hà Nội">Hà Nội</option>
-                <option value="Hồ Chí Minh">Hồ Chí Minh</option>
-                <option value="Đà Nẵng">Đà Nẵng</option>
-                <option value="Cần Thơ">Cần Thơ</option>
-                <option value="Hải Phòng">Hải Phòng</option>
-                <option value="An Giang">An Giang</option>
-                <option value="Bà Rịa - Vũng Tàu">Bà Rịa - Vũng Tàu</option>
-                <!-- Thêm các tỉnh thành khác vào đây -->
-            </select>
-        </div>
-        <div class="form-group">
-            <button type="submit" class="btn-submit">Đăng ký</button>
-          </div>
-        <div class="message-container" id="messageContainer">
-            <p id="messageText"></p>
-        </div>
-    </div>
-<!--end form đăng ký đại lý-->
+<div class="form-container">
+  <h3>Đăng ký đại lý <span class="orange-text">MIAPHARMA</span></h3>
+  <div class="form-group">
+    <label for="fullname">Họ và tên:</label>
+    <input type="text" id="fullname" name="fullname" required>
+  </div>
+  <div class="form-group">
+    <label for="phone">Số điện thoại:</label>
+    <input type="tel" id="phone" name="phone" required>
+  </div>
+  <div class="form-group">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+  </div>
+  <div class="form-group">
+    <label for="province">Khu vực tỉnh thành:</label>
+    <select id="province" name="province" required>
+      <option value="">Chọn tỉnh thành</option>
+      <option value="Hà Nội">Hà Nội</option>
+      <option value="Hồ Chí Minh">Hồ Chí Minh</option>
+      <option value="Đà Nẵng">Đà Nẵng</option>
+      <option value="Cần Thơ">Cần Thơ</option>
+      <option value="Hải Phòng">Hải Phòng</option>
+      <option value="An Giang">An Giang</option>
+      <option value="Bà Rịa - Vũng Tàu">Bà Rịa - Vũng Tàu</option>
+      <!-- Thêm các tỉnh thành khác vào đây -->
+    </select>
+  </div>
+  <div class="form-group">
+	 <button type="submit" class="btn-cancel" onclick="document.location='tuyendung.html'">Hủy</button>
+    <button type="submit" class="btn-submit" onclick="submitForm()" >Đăng ký</button>
+  </div>
+  <div class="message-container" id="messageContainer">
+    <p id="messageText"></p>
+  </div>
+</div>
+<!--end form đăng ký đại lý--> 
 <!-- logo carousel -->
 <div class="logo-carousel-section">
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
         <div class="logo-carousel-inner">
-          <div class="single-logo-item"> <img src="assets/img/company-logos/1.png" alt=""> </div>
-          <div class="single-logo-item"> <img src="assets/img/company-logos/2.png" alt=""> </div>
-          <div class="single-logo-item"> <img src="assets/img/company-logos/3.png" alt=""> </div>
-          <div class="single-logo-item"> <img src="assets/img/company-logos/4.png" alt=""> </div>
-          <div class="single-logo-item"> <img src="assets/img/company-logos/5.png" alt=""> </div>
+          <div class="single-logo-item"> <img src="assets/img/tuyendung-submark/tuyendung1.png" alt=""> </div>
+          <div class="single-logo-item"> <img src="assets/img/tuyendung-submark/tuyendung2.png" alt=""> </div>
+          <div class="single-logo-item"> <img src="assets/img/tuyendung-submark/tuyendung3.png" alt=""> </div>
+          <div class="single-logo-item"> <img src="assets/img/tuyendung-submark/tuyendung4.png" alt=""> </div>
         </div>
       </div>
     </div>
   </div>
 </div>
 <!-- end logo carousel --> 
-
 <!-- footer -->
 <div class="footer-area">
   <div class="container">
@@ -255,7 +257,7 @@
 <!-- main js --> 
 <script src="assets/js/main.js"></script>
 </body>
-	<script>
+<script>
         function submitForm() {
             // Lấy giá trị từ các input
             var fullname = document.getElementById('fullname').value;
@@ -268,7 +270,7 @@
                 var messageContainer = document.getElementById('messageContainer');
                 var messageText = document.getElementById('messageText');
 
-                messageText.textContent = 'Đăng ký của bạn đã được ghi nhận. Vui lòng chờ phê duyệt từ Miapharma.';
+                messageText.textContent = 'Đăng ký của bạn đã được ghi nhận. Vui lòng chờ phê duyệt từ MIAPHARMA.';
                 messageContainer.style.display = 'block';
 
                 // Xóa các giá trị đã điền để người dùng có thể nhập lại nếu cần
