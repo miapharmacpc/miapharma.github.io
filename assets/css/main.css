@@ -363,6 +363,7 @@ a.bordered-btn {
     color: #fff;
     border: 2px solid #036845;
     padding: 7px 20px;
+	font-weight: bold;
 }
 a.read-more-btn {
     display: inline-block;
