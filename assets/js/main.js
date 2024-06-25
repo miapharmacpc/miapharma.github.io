@@ -184,7 +184,28 @@
                 'animation-delay': '0.5s'
             });
         });
+// Hiển thị nút Trở về đầu trang khi cuộn xuống 100px
+window.onscroll = function() {
+    var backToTopButton = document.getElementById('back-to-top');
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        backToTopButton.style.display = 'block';
+    } else {
+        backToTopButton.style.display = 'none';
+    }
+};
 
+    // Back to top button
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 300) {
+            $('.back-to-top').fadeIn('slow');
+        } else {
+            $('.back-to-top').fadeOut('slow');
+        }
+    });
+    $('.back-to-top').click(function () {
+        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+        return false;
+    });
 
         //		 // Hàm xử lý khi submit form đăng ký đại lý Miapharma
         //        function submitForm() {
