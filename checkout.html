@@ -59,24 +59,20 @@
               <li><a href="#">Cửa hàng</a>
                 <ul class="sub-menu">
                   <li><a href="shop.html">Tất cả sản phẩm</a></li>
-                  <li><a href="cart.html">Giỏ hàng của bạn</a></li>
+                  <li><a href="cart.html">Kiểm tra giỏ hàng</a></li>
                   <li><a href="checkout.html">Kiểm tra thanh toán</a></li>
                 </ul>
               </li>
-              <li><a href="news.html">Kiến thức</a>
-                <ul class="sub-menu">
-                  <li><a href="single-news.html">Kiến thức mới nhất</a></li>
-                  <li><a href="news.html">Tất cả kiến thức</a></li>
-                </ul>
+              <li><a href="news.html">Chuyên mục Blog</a>
               </li>
               <li><a href="tuyendung.html">Tuyển dụng</a> </li>
               <li><a href="contact.html">Liên hệ</a></li>
               <li>
-                <div class="header-icons"> <a class="shopping-cart" href="cart.html"><i class="fas fa-shopping-cart"></i></a> <a class="mobile-hide search-bar-icon" href="#"><i class="fas fa-search"></i></a> </div>
+                <div class="header-icons"> <a class="shopping-cart" href="cart.html"><i class="fas fa-shopping-cart"></i></a> <a class="mobile-hide search-bar-icon" href="index.html"><i class="fas fa-search"></i></a> </div>
               </li>
             </ul>
           </nav>
-          <a class="mobile-show search-bar-icon" href="#"><i class="fas fa-search"></i></a>
+          <a class="mobile-show search-bar-icon" href="index.html"><i class="fas fa-search"></i></a>
           <div class="mobile-menu"></div>
           <!-- menu end --> 
         </div>
@@ -117,162 +113,9 @@
   </div>
 </div>
 <!-- end breadcrumb section --> 
-<!--================Checkout Area =================-->
-    <section class="checkout_area section_gap">
-        <div class="container">
-            <div class="returning_customer">
-                <div class="check_title">
-                    <h2>Bạn là khách hàng quay trở lại mua sản phẩm <a href="#">Hãy nhập thông tin cá nhân tại đây:</a></h2>
-                </div>
-                <p>If you have shopped with us before, please enter your details in the boxes below. If you are a new
-                    customer, please proceed to the Billing & Shipping section.</p>
-                <form class="row contact_form" action="#" method="post" novalidate="novalidate">
-                    <div class="col-md-6 form-group p_star">
-                        <input type="text" class="form-control" id="name" name="name">
-                        <span class="placeholder" data-placeholder="Email"></span>
-                    </div>
-                    <div class="col-md-6 form-group p_star">
-                        <input type="password" class="form-control" id="password" name="password">
-                        <span class="placeholder" data-placeholder="Số điện thoại"></span>
-                    </div>
-                    <div class="col-md-12 form-group">
-                        <button type="submit" value="submit" class="primary-btn">Gửi thông tin</button>
-                        <div class="creat_account">
-                            <input type="checkbox" id="f-option" name="selector">
-                            <label for="f-option">Ghi nhớ thông tin của bạn cho lần thanh toán sau</label>
-                        </div>
-                    </div>
-                </form>
-            </div>
-            <div class="cupon_area">
-                <div class="check_title">
-                    <h2>Bạn có mã giảm giá không? <a href="#">Hãy nhập thông tin mã giảm giá tại đây:</a></h2>
-                </div>
-                <input type="text" placeholder="Nhập mã giảm giá">
-                <a class="tp_btn" href="#"> Hoàn tất nhập </a>
-            </div>
-            <div class="billing_details">
-                <div class="row">
-                    <div class="col-lg-8">
-                        <h3>Chi tiết hóa đơn mua hàng</h3>
-                        <form class="row contact_form" action="#" method="post" novalidate="novalidate">
-                            <div class="col-md-6 form-group p_star">
-                                <input type="text" class="form-control" id="first" name="name">
-                                <span class="placeholder" data-placeholder="Họ"></span>
-                            </div>
-                            <div class="col-md-6 form-group p_star">
-                                <input type="text" class="form-control" id="last" name="name">
-                                <span class="placeholder" data-placeholder="Tên"></span>
-                            </div>
-                            <div class="col-md-12 form-group">
-                                <input type="text" class="form-control" id="company" name="company" placeholder="Nơi làm việc">
-                            </div>
-                            <div class="col-md-6 form-group p_star">
-                                <input type="text" class="form-control" id="number" name="number">
-                                <span class="placeholder" data-placeholder="Số điện thoại"></span>
-                            </div>
-                            <div class="col-md-6 form-group p_star">
-                                <input type="text" class="form-control" id="email" name="compemailany">
-                                <span class="placeholder" data-placeholder="Email"></span>
-                            </div>
-                            <div class="col-md-12 form-group p_star">
-                                <select class="country_select">
-                                    <option value="1">Việt Nam</option>
-                                    <option value="2">Singapore</option>
-                                    <option value="4">Thailand</option>
-                                </select>
-                            </div>
-                            <div class="col-md-12 form-group p_star">
-                                <input type="text" class="form-control" id="add1" name="add1">
-                                <span class="placeholder" data-placeholder="Địa chỉ 01"></span>
-                            </div>
-                            <div class="col-md-12 form-group p_star">
-                                <input type="text" class="form-control" id="add2" name="add2">
-                                <span class="placeholder" data-placeholder="Địa chỉ 02"></span>
-                            </div>
-                            <div class="col-md-12 form-group p_star">
-                                <input type="text" class="form-control" id="city" name="city">
-                                <span class="placeholder" data-placeholder="Tỉnh/thành phố"></span>
-                            </div>
-                            <div class="col-md-12 form-group p_star">
-                                <select class="country_select">
-                                    <option value="1">Quận Bình Tân</option>
-                                    <option value="2">Quận Tân Bình</option>
-                                    <option value="4">Quận Bình Thạnh</option>
-                                </select>
-                            </div>
-                            <div class="col-md-12 form-group">
-                                <input type="text" class="form-control" id="zip" name="zip" placeholder="Postcode/ZIP">
-                            </div>
-                            <div class="col-md-12 form-group">
-                                <div class="creat_account">
-                                    <input type="checkbox" id="f-option2" name="selector">
-                                    <label for="f-option2">Cập nhật thông tin</label>
-                                </div>
-                            </div>
-                            <div class="col-md-12 form-group">
-                                <div class="creat_account">
-                                    <h3>Chi tiết hóa đơn giao hàng</h3>
-                                    <input type="checkbox" id="f-option3" name="selector">
-                                    <label for="f-option3">Bạn muốn thay đổi địa chỉ nhận hàng không?</label>
-                                </div>
-                                <textarea class="form-control" name="message" id="message" rows="1" placeholder="Cập nhật địa chỉ nhận hàng mới"></textarea>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="order_box">
-                            <h2>Hóa đơn mua hàng của bạn</h2>
-                            <ul class="list">
-                                <li><a href="#">Sản phẩm <span>Tổng</span></a></li>
-                                <li><a href="#">Dung dịch phụ khoa <span class="last">720.00</span></a></li>
-                                <li><a href="#">Kem chống nắng <span class="last">720.00</span></a></li>
-                                <li><a href="#">Kem dưỡng ẩm <span class="last">720.00</span></a></li>
-                            </ul>
-                            <ul class="list list_2">
-                                <li><a href="#">Tổng <span>$2160.00</span></a></li>
-                                <li><a href="#">Shipping <span>Giá cố định: 40.000</span></a></li>
-                                <li><a href="#">Tổng phải trả <span>2.210.000</span></a></li>
-                            </ul>
-                            <div class="payment_item">
-                                <div class="radion_btn">
-                                    <input type="radio" id="f-option5" name="selector">
-                                    <label for="f-option5">Kiểm tra thanh toán</label>
-                                    <div class="check"></div>
-                                </div>
-                                <p>Vui lòng gửi kiểm tra lại các thông tin nhận hàng của bạn một lần nữa.</p>
-                            </div>
-                            <div class="payment_item active">
-                                <div class="radion_btn">
-                                    <input type="radio" id="f-option6" name="selector">
-                                    <label for="f-option6">Thanh toán </label>
-                                    <img src="assets/img/products/card.jpg" alt="">
-                                    <div class="check"></div>
-                                </div>
-                                <p>Thanh toán qua PayPal; bạn có thể thanh toán bằng thẻ tín dụng nếu bạn không có tài khoản PayPal.</p>
-                            </div>
-                            <div class="creat_account">
-                                <input type="checkbox" id="f-option4" name="selector">
-                                <label for="f-option4">Tôi đã đọc và chấp nhận các 
- </label>
-                                <a href="#">điều khoản & điều kiện*</a>
-                            </div>
-                            <a class="primary-btn" href="#">Đi đến thanh toán</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--================End Checkout Area =================-->
-	
-	
-	
-	
-	
+
 <!-- check out section -->
-<!--<div class="checkout-section mt-150 mb-150">-->
-<!--
+<div class="checkout-section mt-150 mb-150">
   <div class="container">
     <div class="row">
       <div class="col-lg-8">
@@ -298,7 +141,6 @@
                         <input type="text" placeholder="Địa chỉ">
                       </p>
                       <p>
-<!--
                         <input type="tel" placeholder="Số điện thoại">
                       </p>
                       <p>
@@ -339,8 +181,7 @@
             </div>
           </div>
         </div>
-</div>-->
-<!--
+      </div>
       <div class="col-lg-4">
         <div class="order-details-wrap">
           <table class="order-details">
@@ -388,7 +229,6 @@
     </div>
   </div>
 </div>
--->
 <!-- end check out section --> 
 
 <!-- logo carousel -->

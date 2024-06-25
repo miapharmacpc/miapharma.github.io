@@ -410,6 +410,7 @@ a.boxed-btn, a.bordered-btn, a.cart-btn {
 .section-title {
     margin-bottom: 80px;
 }
+/*
 .breadcrumb-bg {
     background-image: url(../img/breadcrumb-bg.jpg);
 }
@@ -446,6 +447,57 @@ a.boxed-btn, a.bordered-btn, a.cart-btn {
     z-index: -1;
     opacity: 0.8;
 }
+*/
+.breadcrumb-bg {
+    background-image: url(../img/breadcrumb-bg.jpg);
+    height: 300px; /* Chiều cao của phần breadcrumb */
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    z-index: 1;
+    background-attachment: fixed;
+}
+
+.breadcrumb-text p {
+    color: #036845;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 5px; /* Khoảng cách giữa các chữ cái */
+    margin: 0; /* Loại bỏ margin mặc định */
+    padding: 20px; /* Padding cho văn bản */
+    text-align: center; /* Căn giữa nội dung */
+}
+
+.breadcrumb-text h1 {
+    font-size: 36px; /* Kích thước tiêu đề */
+    font-weight: 700; /* Độ đậm của tiêu đề */
+    color: #fff;
+    margin: 10px 0; /* Khoảng cách trên và dưới tiêu đề */
+    text-align: center; /* Căn giữa nội dung */
+}
+
+.breadcrumb-section {
+    padding: 100px 0; /* Padding cho phần breadcrumb */
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    z-index: 1;
+    background-attachment: fixed;
+}
+
+.breadcrumb-section:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-color: #f3cb51;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+
 /* -----------------------------------------------------------------------------
 
 # Header Styles
@@ -1101,6 +1153,7 @@ ul.sub-menu li:hover a {
 .sidebar-section ul li a:hover {
     opacity: 0.7;
 }
+/*Forum*/
 .comment-text-body h4 a {
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
@@ -1433,13 +1486,13 @@ div.owl-controls, .owl-controls div {
     background-image: url(../img/latest-news/new3.png);
 }
 .news-bg-4 {
-    background-image: url(../img/latest-news/new1.png);
+    background-image: url(../img/latest-news/new4.png);
 }
 .news-bg-5 {
-    background-image: url(../iimg/latest-news/new2.png);
+    background-image: url(../img/latest-news/new5.png);
 }
 .news-bg-6 {
-    background-image: url(../img/latest-news/new3.png);
+    background-image: url(../img/latest-news/new6.png);
 }
 .latest-news-bg {
     height: 200px;
@@ -1675,6 +1728,11 @@ span.comment-date {
     margin-bottom: 4px;
     transition: all 0.3s linear;
 }
+.sidebar-section .popular_post_widget .post_item img {
+    width: 200px ;
+	height: 100px;
+	border-radius: 10px;
+}
 .sidebar-section .popular_post_widget .post_item .media-body h3:hover {
     color: #f3cb51;
 }
@@ -1685,6 +1743,9 @@ span.comment-date {
 }
 .sidebar-section .popular_post_widget .post_item + .post_item {
     margin-top: 20px;
+}
+.sidebar-section .ads_widget img {
+	border-radius: 10px;
 }
 .sidebar-section .post_category_widget .cat-list li {
     border-bottom: 2px dotted #eee;
@@ -2026,16 +2087,10 @@ a.video-play-btn {
     border-bottom-left-radius: 5px;
 }
 .team-bg-1 {
-    background-image: url(../img/team/ceo.png);
+    background-image: url("../img/about/ceo.png");
 }
 .team-bg-2 {
-    background-image: url(../img/team/team-2.jpg);
-}
-.team-bg-3 {
-    background-image: url(../img/team/team-3.jpg);
-}
-.team-bg-4 {
-    background-image: url(../img/team/team-4.jpg);
+    background-image: url("../img/about/cert.png");
 }
 .team-bg {
     width: 100%;
@@ -2050,7 +2105,7 @@ a.video-play-btn {
     text-align: justify;
     width: 100%;
     max-width: 600px; /* Adjust as needed */
-    margin: 0 auto;
+    margin: 10px auto;
 }
 .single-team-item h4 {
     font-size: 20px;
@@ -2066,7 +2121,7 @@ a.video-play-btn {
     opacity: 0.7;
 }
 .section-text {
-    width: 800px;
+    max-width: 600px;;
     margin: 0 auto;
 }
 .section-text p {
@@ -2075,6 +2130,33 @@ a.video-play-btn {
 .section-text h5 {
     text-align: justify; /* Optional: adjust header alignment if needed */
 }
+.infor {
+    padding: 30px; /* Điều chỉnh khoảng cách để phù hợp với màn hình */
+    max-width: 100%; /* Đảm bảo nội dung không vượt quá chiều rộng tối đa */
+    margin: 200px auto; /* Căn giữa nội dung trên mọi màn hình */
+	background: url("../img/about/bg mt-150.png")
+}
+.section-title {
+    text-align: center; /* Căn giữa tiêu đề */
+    margin-bottom: 20px;
+}
+
+.single-team-item {
+    text-align: center; 
+    margin-bottom: 30px;
+}
+
+.section-text {
+    text-align: justify; /* Căn đều các đoạn văn bản */
+}
+
+.section-text h4 {
+    text-align: center; /* Căn giữa các tiêu đề h4 */
+}
+.section-text h5 {
+    text-align: justify; /* Căn đều các tiêu đề h5 */
+}
+
 /* -----------------------------------------------------------------------------
 
 # Contact Page Styles
@@ -2274,11 +2356,11 @@ p.single-product-pricing span {
     font-size: 32px;
     font-weight: 700;
     margin-bottom: 10px;
-    color: #051922;
+    color: #000000;
     line-height: inherit;
 }
 input[type="number"] {
-    border: 1px solid #036845;
+    border: 1px solid #ddd;
     border-radius: 5px;
     padding: 10px;
     width: 100px;
@@ -2302,7 +2384,7 @@ ul.product-share li {
 }
 ul.product-share li a {
     display: block;
-    color: #051922;
+    color: #000000;
     margin-right: 10px;
 }
 .single-product-content {
@@ -2315,8 +2397,8 @@ ul.product-share li a {
     padding-bottom: 100px;
 }
 .cart_area img {
-	width: 150px;
-	height: 150px;
+    width: 150px;
+    height: 150px;
 }
 .cart_inner .table thead tr th {
     border-top: 0px;
@@ -2352,7 +2434,6 @@ ul.product-share li a {
     font-family: "Noto Sans", sans-serif;
     margin-bottom: 0px;
 }
-/*
 .cart_inner .table tbody tr td .product_count {
     margin-bottom: 0px;
 }
@@ -2382,826 +2463,371 @@ ul.product-share li a {
     position: absolute;
     left: -3px;
     top: 22px;
-    background: #eeeeee;
+    background: #fff;
 }
 .cart_inner .table tbody tr td .product_count .reduced {
     bottom: -6px;
 }
-*/
-.cart_inner .table tbody tr.bottom_button .gray_btn {
-    line-height: 38px;
-    background: #036845;
-    border: 1px solid #eeeeee;
-    border-radius: 30px;
-    padding: 0px 40px;
-    display: inline-block;
-    color: #fff;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-.cart_inner .table tbody tr.bottom_button .gray_btn:hover {
-    color: #036845;
-    background-color: #f3cb51;
-}
-.cart_inner .table tbody tr.bottom_button td:last-child {
-    width: 60px;
-}
-.cart_inner .table tbody tr.bottom_button td .cupon_text {
-    margin-left: -446px;
-}
-.cart_inner .table tbody tr.bottom_button td .cupon_text input {
-    width: 200px;
-    padding: 0px 15px;
-    border-radius: 3px;
-    border: 1px solid #036845;
-    height: 40px;
-    font-size: 14px;
-    color: #cccccc;
-    font-family: "Noto Sans", sans-serif;
-    font-weight: normal;
-    margin-right: -3px;
-    outline: none;
-    box-shadow: none;
-}
-.cart_inner .table tbody tr.bottom_button td .cupon_text input.placeholder {
-    font-size: 14px;
-    color: #036845;
-    font-family: "Noto Sans", sans-serif;
-    font-weight: normal;
-}
-.cart_inner .table tbody tr.bottom_button td .cupon_text input:-moz-placeholder {
-    font-size: 14px;
-    color: #036845;
-    font-family: "Noto Sans", sans-serif;
-    font-weight: normal;
-}
-.cart_inner .table tbody tr.bottom_button td .cupon_text input::-moz-placeholder {
-    font-size: 14px;
-    color: #036845;
-    font-family: "Noto Sans", sans-serif;
-    font-weight: normal;
-}
-.cart_inner .table tbody tr.bottom_button td .cupon_text input::-webkit-input-placeholder {
-    font-size: 14px;
-    color: #036845;
-    font-family: "Noto Sans", sans-serif;
-    font-weight: normal;
-}
-.cart_inner .table tbody tr.bottom_button td .cupon_text .primary-btn {
-    height: 38px;
-    color: #036845;
-    line-height: 38px;
-	font-weight: bold;
-    text-transform: uppercase;
-    padding: 0px 30px;
-    margin: 5px;
-    border-radius: 30px;
-}
-.cart_inner .table tbody tr.bottom_button td .cupon_text .primary-btn:hover {
-    color: #036845;
-    background-color: #f3cb51;
-}
-.cart_inner .table tbody tr.bottom_button td .cupon_text .gray_btn {
-    padding: 0px 40px;
-}
-.cart_inner .table tbody tr.shipping_area td:nth-child(3) {
-    vertical-align: top;
-}
-.cart_inner .table tbody tr.shipping_area .shipping_box {
-    margin-left: -250px;
-    text-align: right;
-}
-.cart_inner .table tbody tr.shipping_area .shipping_box .list li {
-    margin-bottom: 12px;
-}
-.cart_inner .table tbody tr.shipping_area .shipping_box .list li:last-child {
-    margin-bottom: 0px;
-}
-.cart_inner .table tbody tr.shipping_area .shipping_box .list li a {
-    padding-right: 30px;
-    font-size: 14px;
-    color: #777777;
-    position: relative;
-}
-.cart_inner .table tbody tr.shipping_area .shipping_box .list li a:before {
-    content: "";
-    height: 16px;
-    width: 16px;
-    border: 1px solid ;
-    display: inline-block;
-    border-radius: 50%;
-    position: absolute;
-    right: 0px;
-    top: 50%;
-    transform: translateY(-50%);
-}
-.cart_inner .table tbody tr.shipping_area .shipping_box .list li a:after {
-    content: "";
-    height: 10px;
-    width: 10px;
-    border-radius: 50%;
-    background: #f3cb51;
-    display: inline-block;
-    position: absolute;
-    right: 3px;
-    top: 50%;
-    transform: translateY(-50%);
-    opacity: 0;
-}
-.cart_inner .table tbody tr.shipping_area .shipping_box .list li.active a:after {
-    opacity: 1;
-}
-.cart_inner .table tbody tr.shipping_area .shipping_box h6 {
-    font-size: 14px;
-    font-weight: normal;
-    color: #036845;
-    font-family: "Noto Sans", sans-serif;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-.cart_inner .table tbody tr.shipping_area .shipping_box h6 i {
-    color: #036845;
-    padding-left: 5px;
-}
-.cart_inner .table tbody tr.shipping_area .shipping_box .shipping_select {
-    display: block;
-    width: 100%;
-    border: 1px solid #036845; 
-	color: #036845;
-    height: 40px;
-    margin-bottom: 20px;
-}
-.cart_inner .table tbody tr.shipping_area .shipping_box .shipping_select .list {
-    width: 100%;
-    border-radius: 0px;
-}
-.cart_inner .table tbody tr.shipping_area .shipping_box .shipping_select .list li {
-    font-size: 14px;
-    font-weight: normal;
-    color: #036845;
-}
-.cart_inner .table tbody tr.shipping_area .shipping_box input {
-    height: 40px;
-    outline: none;
-    border: 1px solid #036845; 
-	color: #036845;
-    width: 100%;
-    padding: 0px 15px;
-    margin-bottom: 20px;
-}
-.cart_inner .table tbody tr.out_button_area .checkout_btn_inner {
-    margin-left: -388px;
-}
-.cart_inner .table tbody tr.out_button_area .checkout_btn_inner .primary-btn {
-    height: 40px;
-    padding: 0px 30px;
-    line-height: 38px;
-    text-transform: uppercase;
-    border: 1px solid #fff; 
-	border-radius: 30px;
-	color:#036845;
-	font-weight: bold;
-}
-.cart_inner .table tbody tr.out_button_area .checkout_btn_inner .primary-btn:hover {
-    left: 240px;
-	background-color: #f3cb51; 
-	color: #036845;
-}
-.gray_btn {
-    line-height: 38px;
-	background-color: #036845; 
-	border-radius: 30px;
-	color: #fff;
-    padding: 0px 40px;
-    display: inline-block;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-.gray_btn:hover {
-	background-color: #f3cb51; 
-	color: #036845;
-}
-/* End Cart Area css
-============================================================================================ */
-/* End Cart Area css
-============================================================================================ */
-.checkout_area {
-	padding: 50px;
-}
-.check_title h2 {
-    font-size: 14px;
-    font-weight: normal;
-    font-family: "Noto Sans", sans-serif;
-    background: #f3cb51;
-    line-height: 40px !important;
-    padding-left: 30px;
-    margin-bottom: 0px;
-	color: #036845;
-	font-weight: bold;
-}
-.check_title h2 a {
-    color: #AC1214;
-    text-decoration: underline;
-}
-.returning_customer p {
-    margin-top: 15px;
-    padding-left: 30px;
-    margin-bottom: 25px;
-}
-.returning_customer .contact_form {
-    max-width: 710px;
-    margin-left: 15px;
-}
-.returning_customer .contact_form .form-group {
-    margin-bottom: 20px;
-}
-.returning_customer .contact_form .form-group input {
-    border: 1px solid #eeeeee;
-    height: 40px;
-    border-radius: 3px;
-    font-size: 14px;
-    font-family: "Noto Sans", sans-serif;
-    color: #222222;
-    font-weight: normal;
-}
-.returning_customer .contact_form .form-group input.placeholder {
-    font-size: 14px;
-    font-family: "Noto Sans", sans-serif;
-    color: #222222;
-    font-weight: normal;
-}
-.returning_customer .contact_form .form-group input:-moz-placeholder {
-    font-size: 14px;
-    font-family: "Noto Sans", sans-serif;
-    color: #222222;
-    font-weight: normal;
-}
-.returning_customer .contact_form .form-group input::-moz-placeholder {
-    font-size: 14px;
-    font-family: "Noto Sans", sans-serif;
-    color: #222222;
-    font-weight: normal;
-}
-.returning_customer .contact_form .form-group input::-webkit-input-placeholder {
-    font-size: 14px;
-    font-family: "Noto Sans", sans-serif;
-    color: #222222;
-    font-weight: normal;
-}
-.returning_customer .contact_form .form-group .primary-btn {
-    line-height: 38px;
-    padding: 0px 38px;
-    text-transform: uppercase;
-    margin-right: 10px;
-    border-radius: 30px;
-	background-color: #036845;
-	color: #fff;
-    border: none;
-	font-weight: bold;
-}
-.returning_customer .contact_form .form-group .creat_account {
-    display: inline-block;
-    margin-left: 15px;
-}
-.returning_customer .contact_form .form-group .creat_account input {
-    height: auto;
-    margin-right: 10px;
-}
-.returning_customer .contact_form .form-group .lost_pass {
-    display: block;
-    margin-top: 20px;
-    font-size: 14px;
-    font-family: "Noto Sans", sans-serif;
-    color: #222222;
-    font-weight: normal;
-}
-.p_star {
-    display: inline-block;
-    position: relative;
-}
-.p_star input {
-    background: #fff;
-}
-.p_star input:focus + .placeholder {
-    display: none;
-}
-.p_star .placeholder {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 30px;
-    z-index: 1;
-}
-.p_star .placeholder::before {
-    content: attr(data-placeholder);
-    color: #000000;
-}
-.p_star .placeholder::after {
-    content: " *";
-    color: tomato;
-}
-.cupon_area {
-    margin-bottom: 40px;
-}
-.cupon_area input {
-    margin-left: 30px;
-    max-width: 730px;
-    width: 100%;
-    display: block;
-    height: 40px;
-    border-radius: 3px;
-    padding: 0px 15px;
-    border: 1px solid #eeeeee;
-    outline: none;
-    box-shadow: none;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-.cupon_area .tp_btn {
-    margin-left: 30px;
-	border-radius: 30px;
-	background-color: #036845;
-	color: #fff;
-    border: none;
-	font-weight: bold;
-}
-.tp_btn {
-    border: 1px solid #eeeeee;
-    display: inline-block;
-    line-height: 38px;
-    padding: 0px 40px;
-    color: #222222;
-    text-transform: uppercase;
-    font-family: "Noto Sans", sans-serif;
-    font-weight: 500;
-    border-radius: 3px;
-}
-.tp_btn:hover {
-    background: #ffba00;
-    color: #fff;
-    border-color: #ffba00;
-}
-.billing_details h3 {
-    font-size: 18px;
-    color: #036845;
-    border-bottom: 1px solid #eee;
-    padding-bottom: 10px;
-    margin-bottom: 30px;
-}
-.billing_details .contact_form .form-group {
-    margin-bottom: 20px;
-}
-.billing_details .contact_form .form-group input {
-    border-radius: 3px;
-    color: #777777;
-}
-.billing_details .contact_form .form-group input.placeholder {
-    color: #777777;
-}
-.billing_details .contact_form .form-group input:-moz-placeholder {
-    color: #777777;
-}
-.billing_details .contact_form .form-group input::-moz-placeholder {
-    color: #777777;
-}
-.billing_details .contact_form .form-group input::-webkit-input-placeholder {
-    color: #777777;
-}
-.billing_details .contact_form .form-group textarea {
-    height: 150px;
-    border-radius: 3px;
-    margin-top: 15px;
-}
-.billing_details .contact_form .form-group .country_select {
-    width: 100%;
-}
-.billing_details .contact_form .form-group .country_select span {
-    color: #777777;
-}
-.billing_details .contact_form .form-group .country_select .list {
-    width: 100%;
-    border-radius: 0px;
-}
-.billing_details .contact_form .form-group .country_select .list li {
-    font-size: 14px;
-    font-family: "Noto Sans", sans-serif;
-    font-weight: normal;
-}
-.billing_details .contact_form .form-group .creat_account #f-option2 {
-    margin-right: 5px;
-}
-.billing_details .contact_form .form-group .creat_account #f-option3 {
-    margin-right: 5px;
-}
-.billing_details .contact_form .form-group .creat_account a {
-    color: #ffba00;
-}
-.order_box {
-    background: #f6eab4;
-    padding: 30px;
-	border-radius: 15px;
-}
-.order_box h2 {
-    border-bottom: 1px solid #dddddd;
-    font-size: 18px;
-    font-weight: bold;
-    color: #036845;
-    padding-bottom: 15px;
-}
-.order_box ul {
-	padding: 0px;
-}
-.order_box .list li {
-	list-style: none;
-}
-.order_box .list li a {
-    font-size: 14px;
-    color: #777777;
-    font-weight: normal;
-    border-bottom: 1px solid #eeeeee;
-    display: block;
-    line-height: 42px;
-}
-.order_box .list li a span {
-    float: right;
-}
-.order_box .list li a .middle {
-    float: none;
-    width: 50px;
-    text-align: right;
-    display: inline-block;
-    margin-left: 30px;
-    color: #222222;
-}
-.order_box .list li:nth-child(4) a .middle {
-    margin-left: 48px;
-}
-.order_box .list_2 li a {
-    text-transform: uppercase;
-    color: #222222;
-    font-weight: 500;
-}
-.order_box .list_2 li a span {
-    color: #777777;
-    text-transform: capitalize;
-}
-.order_box .list_2 li:last-child a span {
-    color: #222222;
-}
-.order_box .paymen t_item h4 {
-    font-size: 14px;
-    text-transform: uppercase;
-    color: #222222;
-    font-weight: 500;
-    padding-left: 22px;
-    position: relative;
-    margin-bottom: 15px;
-    margin-top: 15px;
-}
-.order_box .payment_item h4:before {
-    content: "";
-    width: 14px;
-    height: 14px;
-    border-radius: 50%;
-    border: 1px solid #cdcdcd;
-    background: #fff;
-    display: block;
-    position: absolute;
-    left: 0px;
-    top: 50%;
-    transform: translateY(-50%);
-}
-.order_box .payment_item h4:after {
-    content: "";
-    height: 4px;
-    width: 4px;
-    background: #fff;
-    border-radius: 50%;
-    display: block;
-    position: absolute;
-    left: 5px;
-    top: 8px;
-}
-.order_box .payment_item h4 img {
-    padding-left: 60px;
-}
-.order_box .payment_item p {
-    background: #fff;
-    padding: 20px;
-	border-radius: 15px;
-}
-.order_box .payment_item.active h4:before {
-    background: #ffba00;
-    border-color: #ffba00;
-}
-.order_box .creat_account {
-    margin-bottom: 15px;
-}
-.order_box .creat_account label {
-    padding-left: 10px;
-    font-size: 12px;
-    color: #222222;
-}
-.order_box .creat_account a {
-    color: #c5322d;
-}
-.order_box .primary-btn {
-    display: block;
-    line-height: 38px;
-    text-transform: uppercase;
-    text-align: center;
-    border-radius: 15px;
-	border: 1px solid #036845;
-	color: #036845;
-	font-weight: bold;
-}
-.order_box .primary-btn:hover:before {
-    left: 310px;
-}
-.order_details .title_confirmation {
-    text-align: center;
-    color: #28d500;
-    font-size: 18px;
-    margin-bottom: 80px;
-}
-.order_d_inner .details_item h4 {
-    border-bottom: 1px solid #eee;
-    padding-bottom: 12px;
-    font-size: 18px;
-    color: #222222;
-    padding-left: 18px;
-}
-.order_d_inner .details_item .list {
-    padding-left: 18px;
-}
-@media (min-width: 767px) {
-    .order_d_inner .details_item .list {
-        margin-bottom: 30px;
-    }
-}
-.order_d_inner .details_item .list li {
-    margin-bottom: 8px;
-}
-.order_d_inner .details_item .list li:last-child {
-    margin-bottom: 0px;
-}
-.order_d_inner .details_item .list li a {
-    font-size: 14px;
-    color: #222222;
-    font-family: "Noto Sans", sans-serif;
-}
-.order_d_inner .details_item .list li a span {
-    width: 145px;
-    display: inline-block;
-    color: #777777;
-}
-.order_details_table {
-    background: #e5ecee;
-    padding: 30px;
-    margin-top: 75px;
-}
-@media (min-width: 767px) {
-    .order_details_table {
-        margin-top: 45px;
-    }
-}
-.order_details_table h2 {
-    color: #222222;
-    font-size: 18px;
-    padding-bottom: 15px;
-}
-.order_details_table .table {
-    margin-bottom: 0px;
-}
-.order_details_table .table thead tr th {
-    border-bottom: 1px solid #ddd;
-    font-size: 14px;
-    font-family: "Noto Sans", sans-serif;
-    font-weight: normal;
-}
-.order_details_table .table tbody tr td p {
-    margin-bottom: 0px;
-}
-.order_details_table .table tbody tr td h5 {
-    color: #222222;
-    margin-bottom: 0px;
-}
-.order_details_table .table tbody tr td h4 {
-    font-size: 14px;
-    text-transform: uppercase;
-    margin-bottom: 0px;
-    color: #222222;
-}
-.order_details_table .table tbody tr:last-child td {
-    border-top: 1px solid #ddd;
-}
-.order_details_table .table tbody tr:last-child td p {
-    color: #222222;
-}
-/* End Cart Area css
-============================================================================================ */
 /*BẢNG CHI TIẾT GIỎ HÀNG*/
-/*
-table.cart-table {
-    border: 1px solid #f9f9f9;
-    width: 100%;
-}
-thead {
-    border-bottom: 1px solid #eee;
-}
-tr.table-head-row th {
-    background-color: #036845;
-    border: 1px solid #036845;
-    padding: 15px;
-    font-weight: bold;
-    text-align: center;
-    color: #fff;
-}
-tr.table-head-row th:last-child {
-    border-right: none;
-}
-.cart-table-wrap tbody tr td {
-    text-align: center;
-}
-td.product-image img {
-    max-width: 50px;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    margin-bottom: 0;
-}
-.cart-table-wrap tbody tr td {
-    border: 1px solid #036845;
-    padding: 20px 0;
-    color: #000000;
-}
-thead.cart-table-head tr {
-    background-color: #efefef;
-}
-td.product-quantity input {
-    margin-bottom: 0;
-}
-td.product-remove a {
-    color: #051922;
-}
-.total-section table.total-table {
-    border: 1px solid #efefef;
-    width: 100%;
-}
-tr.table-total-row {
-    background-color: #efefef;
-}
-tr.table-total-row th {
-    font-weight: bold;
-    font-size: 15px;
-    padding: 15px;
-    background-color: #036845;
-    color: #fff;
-}
-table.total-table tbody tr.total-data td {
-    border: 1px solid #efefef;
-    padding: 19px 15px;
-}
-tr.total-data td strong {
-    margin-right: 32px;
-}
-.cart-buttons {
-    margin-top: 30px;
-}
-.cart-buttons a:first-child {
-    margin-right: 20px;
-}
-.coupon-section {
-    margin-top: 50px;
-}
-.coupon-section h3 {
-    font-size: 20px;
-    font-weight: 500;
-}
-.coupon-form-wrap form p input[type=text] {
-    border: 1px solid #036845;
-    color: #036845;
-    padding: 15px;
-    width: 100%;
-    border-radius: 5px;
-    font-size: 15px;
-}
-.card.single-accordion {
-    margin-bottom: 15px;
-    border-bottom: 1px solid #EFEFEF !important;
-}
-.card.single-accordion .card-header {
-    background-color: #036845;
-    border: none;
-    padding: 0;
-}
-.card.single-accordion:last-child {
-    margin-bottom: 0;
-}
-.card.single-accordion .card-header h5 button {
-    color: #fff;
-    font-size: 15px;
-    display: block;
-    width: 100%;
-    text-align: left;
-    padding: 20px;
-    text-decoration: none;
-    border: none;
-    background-color: #036845;
-    position: relative;
-    padding-left: 50px;
-    font-weight: 600;
-}
-.card.single-accordion {
-    border: 1px solid #036845;
-}
-.billing-address-form {
-    padding: 20px;
-}
-.billing-address-form form p input {
-    border: 1px solid #036845;
-    padding: 15px;
-    width: 100%;
-    border-radius: 3px;
-}
-.billing-address-form form p textarea {
-    width: 100%;
-    border-radius: 3px;
-    border: 1px solid #036845;
-    padding: 15px;
-    height: 120px;
-    resize: none;
-}
-.shipping-address-form p, .card-details p {
-    margin: 0;
-}
-.card.single-accordion .card-header h5 button:before {
-    position: absolute;
-    left: 20px;
-    top: 50%;
-    content: "\f058";
-    font-family: "Noto Sans";
-    font-weight: 900;
-    line-height: 22px;
-    margin-top: -11px;
-    color: #036845;
-}
-.billing-address-form form p:last-child {
-    margin-bottom: 0;
-}
-table.order-details {
-    border: 1px solid #efefef;
-}
-table.order-details thead tr th {
-    background-color: #036845;
-    padding: 18px;
-    font-size: 15px;
-    font-weight: bold;
-    color: #fff;
-    border: 1px solid #036845;
-}
-table.order-details tbody td {
-    border: 1px solid #036845;
-    padding: 15px;
-}
-.order-details-wrap > a {
-    margin-top: 30px;
-}
-.card.single-accordion {
-    border: 1px solid #036845;
-}
-.single-product-item {
-    -webkit-box-shadow: 0 0 20px #e4e4e4;
-    box-shadow: 0 0 20px #e4e4e4;
-    padding-bottom: 50px;
-    border-radius: 5px;
-}
-*/
-/*BẢNG CHI TIẾT GIỎ HÀNG*/
-/* -----------------------------------------------------------------------------
 
+table.cart-table {
+  border: 1px solid #f9f9f9;
+  width: 100%;
+}
+
+thead {
+  border-bottom: 1px solid #eee;
+}
+
+tr.table-head-row th {
+  border-right: 1px solid #efefef;
+  padding: 15px;
+  font-weight: 500;
+  text-align: center;
+}
+
+tr.table-head-row th:last-child {
+  border-right: none;
+}
+
+.cart-table-wrap tbody tr td {
+  text-align: center;
+}
+
+td.product-image img {
+  max-width: 50px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  margin-bottom: 0;
+}
+
+.cart-table-wrap tbody tr td {
+  border: 1px solid #efefef;
+  padding: 20px 0;
+  color: #000000;
+}
+
+thead.cart-table-head tr {
+  background-color: #efefef;
+}
+
+td.product-quantity input {
+  margin-bottom: 0;
+}
+
+td.product-remove a {
+  color: #051922;
+}
+
+.total-section table.total-table {
+  border: 1px solid #efefef;
+  width: 100%;
+}
+
+tr.table-total-row {
+  background-color: #efefef;
+}
+
+tr.table-total-row th {
+  font-weight: 500;
+  font-size: 15px;
+  padding: 15px;
+}
+
+table.total-table tbody tr.total-data td {
+  border: 1px solid #efefef;
+  padding: 19px 15px;
+}
+
+tr.total-data td strong {
+  margin-right: 32px;
+}
+
+.cart-buttons {
+  margin-top: 30px;
+}
+
+.cart-buttons a:first-child {
+  margin-right: 20px;
+}
+/*
+
+.coupon-section {
+  margin-top: 50px;
+}
+
+.coupon-section h3 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.coupon-form-wrap form p input[type=text] {
+  border: 1px solid #ddd;
+  color: #000000;
+  padding: 15px;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 15px;
+}
+*/
+
+.card.single-accordion {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #EFEFEF !important;
+}
+
+.card.single-accordion .card-header {
+  background-color: #fff;
+  border: none;
+  padding: 0;
+}
+
+.card.single-accordion:last-child {
+  margin-bottom: 0;
+}
+
+.card.single-accordion .card-header h5 button {
+  color: #000000;
+  font-size: 15px;
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 20px;
+  text-decoration: none;
+  border: none;
+  background-color: #efefef;
+  position: relative;
+  padding-left: 50px;
+  font-weight: 600;
+}
+
+.card.single-accordion {
+  border: 1px solid #036845;
+}
+
+.billing-address-form {
+  padding: 20px;
+}
+
+.billing-address-form form p input {
+  border: 1px solid #ddd;
+  padding: 15px;
+  width: 100%;
+  border-radius: 3px;
+}
+
+.billing-address-form form p textarea {
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid #ddd;
+  padding: 15px;
+  height: 120px;
+  resize: none;
+}
+
+.shipping-address-form p, .card-details p {
+  margin: 0;
+}
+
+.card.single-accordion .card-header h5 button:before {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  content: "\f058";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  line-height: 22px;
+  margin-top: -11px;
+  color: #036845;
+}
+
+.billing-address-form form p:last-child {
+  margin-bottom: 0;
+}
+
+table.order-details {
+  border: 1px solid #efefef;
+}
+
+table.order-details thead tr th {
+  background-color: #efefef;
+  padding: 18px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+table.order-details tbody td {
+  border: 1px solid #efefef;
+  padding: 15px;
+}
+
+.order-details-wrap > a {
+  margin-top: 30px;
+}
+
+.card.single-accordion {
+  border: 1px solid #eeeeee;
+}
+
+.single-product-item {
+  -webkit-box-shadow: 0 0 20px #e4e4e4;
+  box-shadow: 0 0 20px #e4e4e4;
+  padding-bottom: 50px;
+  border-radius: 5px;
+}
+
+/*cart*/
+
+/*Forum*/
+.forum {
+    text-align: center; /* Căn giữa nội dung phần diễn đàn */
+    margin-bottom: 30px; /* Khoảng cách dưới phần diễn đàn */
+	margin-top: 30px; /* Khoảng cách dưới phần diễn đàn */
+}
+
+.forum h1 {
+    font-size: 28px; /* Kích thước tiêu đề */
+    font-weight: 700; /* Độ đậm của chữ */
+    color: #036845; /* Màu chữ */
+    text-transform: uppercase; /* Chuyển đổi thành chữ hoa */
+    letter-spacing: 3px; /* Khoảng cách giữa các ký tự */
+    margin-bottom: 20px; /* Khoảng cách dưới tiêu đề */
+}
+.forum2 h2  {
+    font-size: 28px; /* Kích thước tiêu đề */
+    font-weight: 700; /* Độ đậm của chữ */
+    color: #036845; /* Màu chữ */
+    margin: 20px; /* Khoảng cách dưới tiêu đề */
+	text-align: center; /* Căn giữa nội dung phần diễn đàn */
+}
+.forum2 h3  {
+    font-size: 24px; /* Kích thước tiêu đề */
+    font-weight: 700; /* Độ đậm của chữ */
+    color: #f3cb51; /* Màu chữ */
+    margin: 20px; /* Khoảng cách dưới tiêu đề */
+	text-align: center; /* Căn giữa nội dung phần diễn đàn */
+}
+.subject img  {
+    margin: 20px;
+	border-radius: 15px;
+}
+/*
 # Tuyển dụng Styles
 
------------------------------------------------------------------------------ */
-.error-text i {
-    font-size: 90px;
-    margin-bottom: 30px;
+----------------------------------------------------------------------------- 
+*/
+.careers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px; /* Khoảng cách với menu 30px */
 }
-.error-text h1 {
-    font-size: 40px;
-    font-weight: 500;
-    margin-bottom: 10px;
+
+.poster {
+    margin-bottom: 10px; /* Khoảng cách 10px giữa poster và form */
+    text-align: center; /* Căn giữa các phần tử bên trong */
 }
-.error-text p {
-    font-size: 15px;
-    margin-bottom: 30px;
+
+.poster img {
+    max-width: 100%;
+    height: auto;
 }
-.full-height-section {
-    height: 100%;
-    display: table;
+
+.form {
+    text-align: center; /* Căn giữa các phần tử bên trong */
+}
+
+.btn-submit {
+    margin-top: 10px; /* Khoảng cách 10px giữa poster và nút đăng ký */
+}
+
+.careers .btn-submit a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #036845;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.careers .btn-submit a:hover {
+    background-color: #f3cb51;
+	color: #036845;
+
+}
+
+.poster {
+    flex: 0 0 auto; /* Kích thước của poster không thay đổi */
+    margin-right: 20px; /* Khoảng cách giữa poster và form */
+}
+
+.form {
+    flex: 1 1 auto; /* Kích thước của form co giãn để lấp đầy khoảng trống */
+    text-align: right; /* Căn phải cho nút đăng ký */
+}
+
+.form .btn-submit a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #036845;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.form .btn-submit a:hover {
+    background-color: #f3cb51;
+	color: #036845;
+}
+
+.poster img {
+    max-width: 100%;
+    height: auto;
+}
+
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+.form-group input[type="text"], .form-group input[type="tel"], .form-group select {
     width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
 }
-.full-height-tablecell {
-    display: table-cell;
-    vertical-align: middle;
-    width: 100%;
+.form-group .btn-submit {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.form-group .btn-submit:hover {
+    background-color: #45a049;
+}
+.message-container {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    display: none;
 }
