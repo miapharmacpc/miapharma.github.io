@@ -15,7 +15,6 @@ xanh non:#7bbb79
 /* -----------------------------------------------------------------------------
 
 # Base - Genral & Typography
-
 ----------------------------------------------------------------------------- */
 html {
     font-size: 14px;
@@ -2800,7 +2799,7 @@ table.order-details tbody td {
 */
 .careers {
     display: flex;
-	 width: 100%;
+	width: 100%;
     height: 600px;
     flex-direction: column;
     align-items: center;
@@ -2808,11 +2807,13 @@ table.order-details tbody td {
 }
 
 .anhtuyendung img {
-    max-width: 100%;
+    max-width: 95%;
     height: auto;
+	margin-left: 5px;
+	margin-right: 5px;
 	margin-bottom: 10px; /* Khoảng cách 10px giữa poster và form */
     text-align: center; /* Căn giữa các phần tử bên trong */
-	border-radius: 15px;
+	border-radius: 10px;
 }
 
 .form {
