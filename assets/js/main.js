@@ -29,7 +29,6 @@
         //            delay: 10,
         //            time: 2000
         //        });
-
         // homepage slider
         $(".homepage-slider").owlCarousel({
             items: 1,
