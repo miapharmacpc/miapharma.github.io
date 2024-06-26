@@ -811,7 +811,6 @@ a.mobile-show {
     margin: 0 auto;
 }
 .logo-carousel-section {
-    background-color: #fff;
     padding: 50px 0;
 }
 .footer-area {
@@ -839,6 +838,7 @@ h2.widget-title:after {
     color: #fff;
     opacity: 0.7;
     line-height: 1.8;
+	text-align: 
 }
 .footer-box ul {
     margin: 0;
