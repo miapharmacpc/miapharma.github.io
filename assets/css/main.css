@@ -838,7 +838,7 @@ h2.widget-title:after {
     color: #fff;
     opacity: 0.7;
     line-height: 1.8;
-	text-align: 
+	text-align: justify;
 }
 .footer-box ul {
     margin: 0;
@@ -2102,6 +2102,9 @@ a.video-play-btn {
     position: relative;
     margin: 150px 0;
 }
+.feature-bg p{
+    text-align: justify;
+}
 .feature-bg:after {
     background-image: url(../img/feature-bg2.png);
     position: absolute;
@@ -2162,9 +2165,10 @@ a.video-play-btn {
     text-align: justify; /* Optional: adjust header alignment if needed */
 }
 .infor {
-    padding: 30px; /* Điều chỉnh khoảng cách để phù hợp với màn hình */
-    max-width: 100%; /* Đảm bảo nội dung không vượt quá chiều rộng tối đa */
-    margin: 200px auto; /* Căn giữa nội dung trên mọi màn hình */
+    padding: 30px;
+    max-width: 100%;
+    margin-top: 200px;
+	margin-bottom: 50px;
 	background: url("../img/about/bg mt-150.png")
 }
 .section-title {
@@ -2174,7 +2178,7 @@ a.video-play-btn {
 
 .single-team-item {
     text-align: center; 
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .section-text {
