@@ -132,16 +132,16 @@
                   <div class="billing-address-form">
                     <form action="index.html">
                       <p>
-                        <input type="text" name="fullname" placeholder="Họ và tên">
+                        <input type="text" id="fullname" name="fullname" placeholder="Họ và tên">
                       </p>
                       <p>
-                        <input type="email" name="email" placeholder="Email">
+                        <input type="email" id="email" name="email" placeholder="Email">
                       </p>
                       <p>
-                        <input type="text" name="address" placeholder="Địa chỉ">
+                        <input type="text" id="address" name="address" placeholder="Địa chỉ">
                       </p>
                       <p>
-                        <input type="tel" name="phone" placeholder="Số điện thoại">
+                        <input type="tel" id="phone" name="phone" placeholder="Số điện thoại">
                       </p>
                       <p>
                         <textarea name="bill" id="bill" cols="30" rows="10" placeholder="Để lại lời nhắn tại đây"></textarea>
@@ -224,7 +224,7 @@
               </tr>
             </tbody>
           </table>
-          <a href="checkout.html" class="boxed-btn">Thanh toán tại đây</a>
+          <a class="boxed-btn" onclick="submitForm()">Thanh toán tại đây</a>
 		  </div>
 		  <div class="message-container" id="messageContainer">
     <p id="messageText"></p>
@@ -343,7 +343,6 @@
 <script src="assets/js/main.js"></script>
 	
 </body>
-<!--
 	<script>
         function submitForm() {
             // Lấy giá trị từ các input
@@ -354,25 +353,23 @@
             var bill = document.getElementById('bill').value;
 
             // Kiểm tra nếu các trường đã được điền đầy đủ
-            if (fullname && phone && province) {
+            if (fullname && email && address && phone  && address) {
                 // Hiển thị thông báo xác nhận thanh toán thành công
                 var messageContainer = document.getElementById('messageContainer');
                 var messageText = document.getElementById('messageText');
 
-                messageText.textContent = 'Bạn đã thanh toán thành công';
+                messageText.textContent = 'Bạn đã thanh toán thành công,cảm ơn bạn ' + fullname + ' đã ủng hộ chúng tôi';
                 messageContainer.style.display = 'block';
 
                 // Xóa các giá trị đã điền để người dùng có thể nhập lại nếu cần
                 document.getElementById('fullname').value = '';
-                document.getElementById('phone').value = '';
-                document.getElementById('province').value = '';
-				document.getElementById('fullname').value = '';
-                document.getElementById('phone').value = '';
-                document.getElementById('province').value = '';
+                document.getElementById('email').value = '';
+                document.getElementById('address').value = '';
+				document.getElementById('phone').value = '';
+                document.getElementById('bill').value = '';
             } else {
                 alert('Vui lòng điền đầy đủ thông tin.');
             }
         }
     </script>
--->
 </html>
